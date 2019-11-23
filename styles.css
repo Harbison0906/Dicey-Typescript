@@ -2,20 +2,25 @@ body {
   background-color: #C6C6C6;
 }
 
-#generate {
+h1 {
+  color: #333338;
+  font-family: 'Notable', sans-serif;
+  text-align: center;
+  letter-spacing: 2px;
+  margin: 20px;
+  text-shadow: -1px 2px 2px #000000;
+}
+
+.row {
   background-color: #B50000;
-  padding: 50px;
-  margin-top: 50px;
   border-radius: 5px;
-  -webkit-box-shadow: -1px 4px 7px 1px #000000; 
+  padding: 50px;
   box-shadow: -1px 4px 7px 1px #000000;
 }
 
 button {
-width: 200px;
+width: 175px;
 background-color: #333338;
 color: #FFFFFF;
-margin: 20px;
--webkit-box-shadow: -1px 4px 7px 1px #000000; 
 box-shadow: -1px 4px 7px 1px #000000;
 }

@@ -5,24 +5,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Dicey Business</title>
+  <title>Dicey Bidness</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Notable&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-  <main class="container">
-    <section class="row">
-      <article class="col">
-        <div id="generate">
-          <button type="button" class="btn btn-lg">Generate Die</button>
-          <button type="button" class="btn btn-lg">Roll Die</button>
-        </div>
-      </article>
+    <h1>DICEY BIDNESS</h1>
 
-    </section>
-  </main>
+  <section class="container">
+    <article class="row d-flex justify-content-center">
+      <div class="col-3">
+        <button type="button" class="btn btn-lg" id="gen">Generate Die</button>
+      </div>
+      <div class="col-3">
+        <button type="button" class="btn btn-lg" id="roll">Roll Die</button>
+      </div>
+      <div class="col-3">
+        <button type="button" class="btn btn-lg" id="sum">Dice Sum</button>
+      </div>
+    </article>
+  </section>
+
+
 
   <script src="app.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
