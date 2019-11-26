@@ -5,7 +5,9 @@ class Die {
     this.value = value;
   }
   roll() {
-  let randomVal = dieValues[Math.floor(Math.random()*dieValues.length)]
-  console.log(randomVal);
+    let randomVal = dieValues[Math.floor(Math.random() * dieValues.length)];
+      console.log(randomVal);
   }
 }
+
+$('#gen').click(roll());

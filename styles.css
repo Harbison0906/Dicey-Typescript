@@ -24,3 +24,7 @@ background-color: #333338;
 color: #FFFFFF;
 box-shadow: -1px 4px 7px 1px #000000;
 }
+
+#diceBoard {
+  margin-top: 50px;
+}
