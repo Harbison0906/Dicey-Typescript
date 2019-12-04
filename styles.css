@@ -11,7 +11,7 @@ h1 {
   text-shadow: -1px 2px 2px #000000;
 }
 
-.row {
+#btns {
   background-color: #B50000;
   border-radius: 5px;
   padding: 50px;
@@ -26,5 +26,13 @@ box-shadow: -1px 4px 7px 1px #000000;
 }
 
 #diceBoard {
-  margin-top: 50px;
+  position: relative;
+  background-color: #B50000;
+}
+
+#dice {
+  /* position: absolute; */
+  width: 100px;
+  height: 100px;
+  border: solid black 2.5px;
 }

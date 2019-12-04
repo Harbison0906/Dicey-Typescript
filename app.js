@@ -1,13 +1,13 @@
-dieValues = [1, 2, 3, 4, 5, 6];
+let sides = 6
 
 class Die {
   constructor(value) {
-    this.value = value;
+   this.val = roll();
   }
   roll() {
-    let randomVal = dieValues[Math.floor(Math.random() * dieValues.length)];
-      console.log(randomVal);
+    let randomVal = Math.floor(Math.random() * this.sides) + 1;
+    console.log(randomVal);
   }
 }
 
-$('#gen').click(roll());
+roll();
