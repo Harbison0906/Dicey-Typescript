@@ -26,13 +26,16 @@ box-shadow: -1px 4px 7px 1px #000000;
 }
 
 #diceBoard {
-  position: relative;
+  margin: inherit;
+  border-radius: 5px;
   background-color: #B50000;
 }
 
-#dice {
-  /* position: absolute; */
+#die {
+  padding: 20px;
+  background-color: white;
   width: 100px;
   height: 100px;
   border: solid black 2.5px;
+  border-radius: 10px;
 }
