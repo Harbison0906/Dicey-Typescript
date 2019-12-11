@@ -26,9 +26,8 @@ box-shadow: -1px 4px 7px 1px #000000;
 }
 
 #diceBoard {
-  margin: inherit;
-  border-radius: 5px;
-  background-color: #B50000;
+  height: ;
+  margin: 20px;
 }
 
 #die {
