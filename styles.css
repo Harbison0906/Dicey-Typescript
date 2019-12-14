@@ -30,11 +30,16 @@ box-shadow: -1px 4px 7px 1px #000000;
   margin: 20px;
 }
 
-#die {
+.die {
   padding: 20px;
+  margin: 20px;
   background-color: white;
+  box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.75);
   width: 100px;
   height: 100px;
   border: solid black 2.5px;
   border-radius: 10px;
+  font-family: 'Exo', sans-serif;
+  font-size: 40px;
+  text-align: center;
 }
