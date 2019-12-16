@@ -11,10 +11,8 @@ class Die {
   roll() {
     let randomVal = Math.floor((Math.random() * 6) + 1);
     $(this.div).append(randomVal);
-    this.div.attr('id', randomVal);    
+    this.div.attr('id', randomVal);
   }
-
-  
 }
 
 
@@ -34,19 +32,12 @@ $('#roll').click(function () {
   }
 })
 
-diceSum = function(total, num) {
-    return total + num;
-  }
-
-  total = function() {
-    diceArray.reduce(diceSum, 0);
-
-  }
-
 $('#sum').click(function () {
-  sum = 0
-  for (i = 0; i < diceArray.length; i++) {
+  let sum = 0; 
+  let dieVal = randomVal;
+  for (let i = 0; i < diceArray.length; i++) {
     sum += diceArray[i];
   }
-  console.log(diceArray);
+  // alert(`Total sum of the die is: ${sum}`);
+  console.log(sum);
 })
