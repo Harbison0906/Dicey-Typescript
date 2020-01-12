@@ -1,43 +1,28 @@
 const diceArray = [];
 
 class Die {
-  constructor(value) {
-    this.div = $('<div></div>');
-    this.div.addClass('die');
+  constructor() {
+    this.div = $('<div class="die"></div>');
     this.roll();
     $('#diceBoard').append(this.div);
-
+    this.div.click(() => this.roll());
+    this.div.dblclick(() => this.destroy());
+  }
+  destroy() {
+    this.div.remove();
+    let index = diceArray.indexOf(this);
+    diceArray.splice(index, 1);
   }
   roll() {
     this.randomVal = Math.floor((Math.random() * 6) + 1);
-    $(this.div).append(this.randomVal);
-    this.div.attr('id', this.randomVal);
-
+    $(this.div).text(this.randomVal);
   }
-
 }
 
-let diceBoard = $('#diceBoard')
-$('body').append(diceBoard);
-
-$('#gen').click(function () {
-  let newDie = new Die();
-  diceArray.push(newDie);
-  // console.log(diceArray);
-})
-
-$('#roll').click(function () {
-  $('.die').empty();
-  for (i = 0; i < diceArray.length; i++) {
-    diceArray[i].roll();
-  }
-})
-
-$('#sum').click(function () {
+$('#gen').click(() => diceArray.push(new Die()));
+$('#roll').click(() => diceArray.forEach(die => die.roll()));
+$('#sum').click(() => {
   let sum = 0;
-  for (let i = 0; i < diceArray.length; i++) {
-    sum += diceArray[i].randomVal;
-  }
+  diceArray.forEach(die => (sum+=die.randomVal));
   alert(`Total sum of the die is: ${sum}`);
-  
 })
