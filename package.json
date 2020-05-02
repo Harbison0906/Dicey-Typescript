@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Harbison0906/Dicey-Typescript/issues"
   },
-  "homepage": "https://github.com/Harbison0906/Dicey-Typescript#readme"
+  "homepage": "https://github.com/Harbison0906/Dicey-Typescript#readme",
+  "dependencies": {
+    "typescript": "^3.8.3"
+  }
 }
