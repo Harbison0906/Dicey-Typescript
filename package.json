@@ -1,0 +1,20 @@
+{
+  "name": "Typescript-Dicey",
+  "version": "1.0.0",
+  "description": "Lab that combines principles of HTML, CSS, JavaScript, Accessing/Creating/Modifying HTML elements, and Object Oriented Programming.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Harbison0906/Dicey-Typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Harbison0906/Dicey-Typescript/issues"
+  },
+  "homepage": "https://github.com/Harbison0906/Dicey-Typescript#readme"
+}
