@@ -1,6 +1,7 @@
-const diceArray = [];
+const diceArray: Die[] = [];
 
 class Die {
+  div: JQuery<HTMLDivElement>
   constructor() {
     this.div = $('<div class="die"></div>');
     this.roll();
