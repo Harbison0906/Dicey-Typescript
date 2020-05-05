@@ -2,6 +2,7 @@ const diceArray: Die[] = [];
 
 class Die {
   div: JQuery<HTMLDivElement>
+  public randomVal: number;
   constructor() {
     this.div = $('<div class="die"></div>');
     this.roll();
